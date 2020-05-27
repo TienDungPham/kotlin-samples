@@ -1,4 +1,4 @@
-// https://refactoring.guru/design-patterns/factory-method
+package factory
 
 interface Car {
     fun drive(): Unit
@@ -34,4 +34,3 @@ fun main() {
     val carFactory: CarFactory = CarFactory()
     carFactory.create("nissan").drive()
 }
-

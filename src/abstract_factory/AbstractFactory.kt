@@ -1,4 +1,4 @@
-// https://refactoring.guru/design-patterns/abstract-factory
+package abstract_factory
 
 interface Engine {
     fun start()
@@ -22,13 +22,13 @@ interface Wheel {
 
 class ClassicWheel : Wheel {
     override fun roll() {
-        print("Classic engine roll")
+        print("Classic wheel roll")
     }
 }
 
 class EnhanceWheel : Wheel {
     override fun roll() {
-        print("Enhance engine roll")
+        print("Enhance wheel roll")
     }
 }
 
