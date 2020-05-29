@@ -1,4 +1,4 @@
-package abstract_factory
+package factory
 
 interface Engine {
     fun start()
