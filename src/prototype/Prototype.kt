@@ -1,10 +1,10 @@
 package prototype
 
-interface Prototype {
-    fun clone(): Car
+interface Prototype<out T> {
+    fun clone(): T
 }
 
-open class Car : Prototype {
+open class Car : Prototype<Car> {
     private var wheelNumber = 4
 
     constructor() {}
@@ -18,7 +18,7 @@ open class Car : Prototype {
     }
 }
 
-class NissanCar : Car, Prototype {
+class NissanCar : Car, Prototype<Car> {
     private var engineVersion = 1
 
     constructor() {}
